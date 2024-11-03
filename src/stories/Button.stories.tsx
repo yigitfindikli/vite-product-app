@@ -98,7 +98,6 @@ export const DangerOutlined: Story = {
     },
 };
 
-// Variants with Plain Layout
 export const PrimaryPlain: Story = {
     args: {
         children: 'Primary Plain',

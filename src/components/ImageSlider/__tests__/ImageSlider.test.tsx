@@ -283,7 +283,6 @@ describe('ImageSlider Component', () => {
 
         const slider = screen.getByTestId('image-slider-content').parentElement!;
 
-        // Try to swipe past the last image
         fireEvent.touchStart(slider, { touches: [{ clientX: 200 }] });
         fireEvent.touchMove(slider, { touches: [{ clientX: 50 }] });
         fireEvent.touchEnd(slider);
@@ -296,7 +295,6 @@ describe('ImageSlider Component', () => {
         fireEvent.touchMove(slider, { touches: [{ clientX: 50 }] });
         fireEvent.touchEnd(slider);
 
-        // Should stay at the last image
         expect(screen.getAllByRole('img')[2]).toHaveAttribute('src', 'image3.jpg');
     });
 });

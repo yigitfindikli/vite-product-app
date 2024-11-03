@@ -94,7 +94,7 @@ export const ThreeQuarters: Story = {
  */
 export const InvalidPercentage: Story = {
     args: {
-        filledPercentage: 150, // Will be clamped to 100
+        filledPercentage: 150,
         id: 'invalid-star',
     },
 };

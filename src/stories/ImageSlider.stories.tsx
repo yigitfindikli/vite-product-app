@@ -45,7 +45,6 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof ImageSlider>;
 
-// Mock images for examples
 const mockImages = [
     { src: 'https://placehold.co/600x400/FF6B6B/FFFFFF', alt: 'Red slide', id: '1' },
     { src: 'https://placehold.co/600x400/4ECDC4/FFFFFF', alt: 'Turquoise slide', id: '2' },
