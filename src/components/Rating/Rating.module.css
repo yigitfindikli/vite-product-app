@@ -1,0 +1,13 @@
+.rating-container {
+    display: inline-flex;
+}
+
+.rating-star {
+    display: inline-flex;
+    user-select: none;
+}
+
+.rating-star.rating-star--interactive:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--color-focus-ring);
+}

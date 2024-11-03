@@ -1,0 +1,15 @@
+.textarea {
+    font-family: var(--font-family-body);
+    padding: var(--spacing-sm);
+    border-radius: var(--border-radius-md);
+    border: 1px solid var(--color-gray-200);
+    resize: none;
+}
+
+.textarea:focus {
+    outline: none;
+    box-shadow:
+        0 0 0 1px #fff,
+        0 0 0 3px var(--color-primary);
+    outline-offset: 2px;
+}

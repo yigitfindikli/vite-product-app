@@ -1,0 +1,30 @@
+module.exports = {
+    preset: 'ts-jest',
+    testEnvironment: 'jsdom',
+    setupFilesAfterEnv: ['<rootDir>/src/setupTests.ts'],
+    transform: {
+        '^.+\\.(ts|tsx)$': ['ts-jest', { tsconfig: 'tsconfig.jest.json' }],
+    },
+    moduleNameMapper: {
+        '\\.(css|less|scss|sass)$': 'identity-obj-proxy',
+        '^@/(.*)$': '<rootDir>/src/$1',
+    },
+    testPathIgnorePatterns: ['/node_modules/', '/dist/'],
+    moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
+    collectCoverage: true,
+    collectCoverageFrom: [
+        'src/**/*.{ts,tsx}',
+        '!src/**/*.d.ts',
+        '!src/main.tsx',
+        '!src/setupTests.ts',
+        '!src/services/httpClient.ts',
+        '!src/types/**/*',
+        '!src/constants/**/*',
+        '!src/App.tsx',
+        '!src/contexts/**/*',
+        '!src/hooks/**/*',
+        '!src/stories/**/*',
+    ],
+    coverageDirectory: 'coverage',
+    coverageReporters: ['json', 'lcov', 'text', 'clover'],
+};

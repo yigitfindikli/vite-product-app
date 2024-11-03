@@ -1,0 +1,106 @@
+:root {
+    /* Colors - Base */
+    --color-white: #ffffff;
+    --color-bg: #fdfcfc;
+    --color-card-bg: #ffffff;
+
+    /* Colors - Gray Scale */
+    --color-gray-100: #f5f5f5;
+    --color-gray-200: #e5e5e5;
+    --color-gray-300: #d4d4d4;
+    --color-gray-400: #a3a3a3;
+    --color-gray-700: #737373;
+    --color-gray-800: #575757;
+    --color-gray-900: #404040;
+
+    /* Colors - Primary */
+    --color-primary-100: #ccfbf1;
+    --color-primary-200: #99f6e4;
+    --color-primary: #14b8a6;
+    --color-primary-hover: #0baea0;
+    --color-primary-light-active: #0da19a;
+    --color-primary-active: #115e59;
+
+    /* Colors - Secondary */
+    --color-secondary-100: #fafafa;
+    --color-secondary-200: #e5e5e5;
+    --color-secondary: #525252;
+    --color-secondary-hover: #404040;
+    --color-secondary-active: #262626;
+
+    /* Colors - Danger */
+    --color-danger-100: #fee2e2;
+    --color-danger-200: #fecaca;
+    --color-danger: #f87171;
+    --color-danger-hover: #ef4444;
+    --color-danger-active: #dc2626;
+
+    /* Colors - States */
+    --color-disabled-bg: #f5f5f5;
+    --color-disabled-text: #a3a3a3;
+    --color-border: #d4d4d4;
+    --color-focus-ring: #2dd4bf;
+    --color-input-bg: #f5f5f5;
+    --color-input-text: #404040;
+    --color-gold: #ffd700;
+
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+
+    /* Border Radius */
+    --border-radius-md: 0.375rem;
+    --border-radius-lg: 0.5rem;
+
+    /* Typography */
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+    --font-family: sans-serif;
+
+    /* Components */
+    --star-filled-color: var(--color-gold);
+    --star-empty-color: var(--color-gray-300);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--color-bg);
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.layout {
+    padding: var(--spacing-md);
+}

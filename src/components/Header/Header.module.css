@@ -1,0 +1,21 @@
+.header {
+    padding: var(--spacing-md) var(--spacing-lg);
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid var(--color-gray-200);
+    border-radius: var(--border-radius-md);
+    background-color: var(--color-card-bg);
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__container > h2 {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-gray-700);
+    user-select: none;
+}
